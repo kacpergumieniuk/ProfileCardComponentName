@@ -1,0 +1,109 @@
+//Variables
+
+$DarkCyan: hsl(185, 75%, 39%);
+$VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$DarkGrayishBlue: hsl(227, 10%, 46%);
+$DarkGray: hsl(0, 0%, 59%);
+
+//CSS
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background: url(/images/bg-pattern-top.svg) -21em -30rem no-repeat,
+    url(/images/bg-pattern-bottom.svg) 40rem 25rem no-repeat, #19a2ae;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-weight: 700;
+  color: $VeryDarkDesaturatedBlue;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.card {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  margin-right: 30px;
+  margin-left: 30px;
+
+  .card-bg {
+    background-image: url(/images/bg-pattern-card.svg);
+    height: 40%;
+    border-radius: 16px 16px 0 0;
+  }
+
+  img {
+    border-radius: 50%;
+    position: absolute;
+    border: 5px #fff solid;
+    top: calc(40% - 50.5px);
+    left: calc(50% - 50.5px);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      margin-bottom: 0;
+      margin-top: 80px;
+      margin-bottom: 6px;
+      span {
+        color: $DarkGrayishBlue;
+        font-weight: 300;
+        padding-left: 4px;
+      }
+    }
+    .city {
+      margin-bottom: 30px;
+      margin-top: 0;
+      color: $DarkGrayishBlue;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    .stats {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 80px;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: auto;
+      border-top: 0.1px rgb(225, 225, 225) solid;
+      padding: 0 15px;
+
+      .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        padding-top: 20px;
+
+        .label {
+          margin-top: 3px;
+          color: $DarkGray;
+          font-weight: 300;
+          font-size: 10px;
+          letter-spacing: 1px;
+        }
+        .number {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
