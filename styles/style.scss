@@ -14,7 +14,7 @@ $DarkGray: hsl(0, 0%, 59%);
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
-  background: url(/images/bg-pattern-top.svg) -21em -30rem no-repeat,
+  background: url(/images/bg-pattern-top.svg) -19em -30rem no-repeat,
     url(/images/bg-pattern-bottom.svg) 40rem 25rem no-repeat, #19a2ae;
   padding: 0;
   margin: 0;
@@ -30,8 +30,8 @@ body {
   position: relative;
 }
 .card {
-  width: 350px;
-  height: 400px;
+  width: 325px;
+  height: 375px;
   background-color: #fff;
   border-radius: 16px;
   position: relative;
@@ -79,7 +79,7 @@ body {
       display: flex;
       flex-direction: row;
       width: 100%;
-      height: 80px;
+      height: 55px;
       align-items: center;
       justify-content: space-around;
       margin-top: auto;
@@ -91,7 +91,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 33%;
-        padding-top: 20px;
+        padding-top: 30px;
 
         .label {
           margin-top: 3px;
